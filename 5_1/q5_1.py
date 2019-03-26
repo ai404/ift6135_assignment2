@@ -43,9 +43,6 @@ parser.add_argument('--seed', type=int, default=1111,
 
 
 class ExperimentArgs:
-    """
-    	used to parse configuration files
-    """
     def __init__(self,base,batch_size = None):
         for file in os.listdir(base):
             if file.endswith("pt"):
